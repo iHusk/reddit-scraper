@@ -11,24 +11,7 @@ from requests import get
 SS_URL = 'https://old.reddit.com/r/Superstonk/'
 WSB_URL = 'https://old.reddit.com/r/wallstreetbets/'
 
-FILEPATH = '/home/pi/data/reddit_scraper.csv'
-
-# user_agent = 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36'
-# headers = {"user-agent": user_agent}
-
-# def lovely_soup(u):
-#     r = get(u, headers=headers)
-#     return BeautifulSoup(r.text, 'lxml')
-
-
-# url = 'https://old.reddit.com/r/Superstonk/'
-# soup = lovely_soup(url)
-
-# active = soup.find_all("span", {"class": "number"})
-
-# for item in active:
-#     print(item.contents[0])
-
+FILEPATH = './reddit-scraper/data'
 
 def process_soup(soup):
     temp = [datetime.now()]
